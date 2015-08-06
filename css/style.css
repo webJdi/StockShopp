@@ -1,3 +1,14 @@
+/*///////////////////
+
+color scheme: white(#fff), orange ( rgb(247, 147, 29) );
+
+
+
+
+/////////////////////*/
+
+
+
 html,body
 {
 	margin: 0;
@@ -34,6 +45,10 @@ nav
 #home
 {
 	min-height: 700px;
+	background: rgba(0,0,0,0.15);
+	padding-top: 100px;
+	color: #fff;
+	font-weight: 200;
 }
 #searchbox
 {
@@ -55,11 +70,20 @@ nav
 }
 .shopbtn
 {
-	padding:0.8em 2em;
+	padding:1.5em 2.5em;
 	background: #fff;
-	width: 90px;
-	font-size: 1.5em;
+	width: 80px;
+	font-size: 1.1em;
+	font-weight: 200;
 	display: inline-block;
+}
+
+.trans
+{
+	transition:all 0.2s;
+	-webkit-transition:all 0.2s;
+	-moz-transition:all 0.2s;
+	-o-transition:all 0.2s;
 }
 .shopbtn *,.loginbtn *
 {
@@ -67,11 +91,12 @@ nav
 }
 .loginbtn
 {
-	padding:0.8em 2em;
+	padding:1.5em 2.5em;
 	background: rgb(247, 147, 29);
 	color: #fff;
-	width: 90px;
-	font-size: 1.5em;
+	width: 80px;
+	font-size: 1.1em;
+	font-weight: 200;
 	display: inline-block;
 }
 .shadow
@@ -79,4 +104,97 @@ nav
 	-webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.45);
 -moz-box-shadow:    4px 4px 13px 0px rgba(50, 50, 50, 0.45);
 box-shadow:         4px 4px 13px 0px rgba(50, 50, 50, 0.45);
+}
+
+.loginbtn:hover, .shopbtn:hover
+{
+	transform: translateY(-15px);
+	-webkit-transform: translateY(-15px);
+	-moz-transform: translateY(-15px);
+	-o-transform: translateY(-15px);
+}
+
+
+.typed-cursor{
+            opacity: 1;
+            color: rgb(247, 147, 29);
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+/*////////////////  Home  //////////////////////////*/
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+.home-content
+{
+	width: 800px;
+	display: block;
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+	font-weight: 200 !important;
+}
+.home-content h1
+{
+	font-size: 5em;
+	font-weight: 200 !important;
+}
+.home-content h3
+{
+	font-size: 2em;
+	font-weight: 200 !important;
+}
+.home-content form input[type=text]
+{
+	background: rgba(256,256,256,0.4);
+	border: 1px solid #fff;
+	padding: 0.7em;
+	min-width: 500px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 200;
+}
+.home-content form input[type=submit]
+{
+	background: rgb(247, 147, 29);
+	border: none;
+	padding: 0.7em 2em;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 200;
 }
