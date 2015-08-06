@@ -23,8 +23,14 @@
 			<a href=""><div class="loginbtn shadow trans">Login <span class="fa fa-check-square-o"></span></div></a>
 		</div>
 	</nav>
-	<!-- Home -->
 
+	<!-- notification box -->
+
+	<div class="notifbox">
+		
+		
+	</div>
+	<!-- Home -->
 	<section id="home">
 		
 		<div class="home-content">
@@ -32,7 +38,7 @@
 			<h3>Find the things which you are looking for!</h3>
 			<form target="" method="POST">
 				<input type="text" placeholder="Search">
-				<input type="submit">
+				<button type="submit" class="trans" placeholder="Search">Search <span class="fa fa-search"></span></button> 
 			</form>
 		</div>
 
@@ -41,7 +47,33 @@
 	<!-- featured -->
 
 	<section id="featured">
+		<div class="row">
+			<div class="9u -2u grid">
+				<div class=" grid-item lrg">
+					<div class="imgholder"></div>
+					<div class="titlelink"></div>
+				</div>
+				<div class="grid-item sml">
+					<div class="imgholder"></div>
+					<div class="titlelink"></div>					
+				</div>
+				<div class="grid-item mdm">
+					<div class="imgholder"></div>
+					<div class="titlelink"></div>					
+				</div>
+				<div class="grid-item sml">
+					<div class="imgholder"></div>
+					<div class="titlelink"></div>					
+				</div>
+				<div class="grid-item sml">
+					<div class="imgholder"></div>
+					<div class="titlelink"></div>					
+				</div>
+				
 
+			</div>
+
+		</div>
 
 		
 
@@ -55,6 +87,16 @@
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+	$('.grid').isotope({
+	  // options
+	  itemSelector: '.grid-item',
+	  layoutMode: 'masonry',
+	  masonry: {
+    		columnWidth: 20
+  		}
+	});
+</script>
 <script type="text/javascript" src="js/skel.js"></script>
 <script type="text/javascript" src="js/skel-layout.js"></script>
 <script type="text/javascript" src="js/typed.js"></script>
