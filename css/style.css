@@ -223,11 +223,13 @@ box-shadow:         4px 4px 13px 0px rgba(50, 50, 50, 0.45);
 .grid
 {
 	overflow: hidden;
+	min-height: 600px;
+	margin-top: 100px;
 }
 .lrg,.mdm,.sml
 {
 	background: #afafaf;
-	margin: 20px;
+	margin: 10px;
 }
 .lrg
 {
@@ -243,4 +245,58 @@ box-shadow:         4px 4px 13px 0px rgba(50, 50, 50, 0.45);
 {
 	height: 180px;
 	width: 180px;
+}
+#featured h1
+{
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
+	font-size: 2em;
+	font-weight: 200;
+}
+.imgholder
+{
+	height: 75%;
+	width: 100%;
+	background: rgb(242,242,242);
+}
+.titlelink
+{
+	height: 25%;
+	width: 100%;
+	background: rgb(70,70,70);
+}
+.titlelink div
+{
+	height: 100%;
+}
+.morebtn
+{
+	background: rgb(247, 147, 29);
+	color: #fff;
+	vertical-align: middle;
+}
+.lrg .morebtn
+{
+	padding-top: 2em;
+}
+.mdm .morebtn
+{
+	padding-top: 1em;
+}
+.sml .morebtn
+{
+	padding-top: 0.5em;
+}
+
+
+.morebtn *
+{
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.morebtn a span
+{
+	color: #fff;
 }
