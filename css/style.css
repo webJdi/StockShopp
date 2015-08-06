@@ -1,0 +1,82 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6,a,div
+{
+	font-family: 'Open Sans', sans-serif;
+}
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+body
+{
+	background-image: url('../img/bg1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+section
+{
+	width: 100%;
+}
+nav
+{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+#home
+{
+	min-height: 700px;
+}
+#searchbox
+{
+	padding: 1em;
+	margin: 15px;
+	min-width: 500px;
+	background: rgba(256,256,256,0.2);
+}
+#featured
+{
+	min-height: 500px;
+	background-color: rgb(256,256,256);
+}
+
+.nav-ht
+{
+	height: 70px;
+	vertical-align: middle;
+}
+.shopbtn
+{
+	padding:0.8em 2em;
+	background: #fff;
+	width: 90px;
+	font-size: 1.5em;
+	display: inline-block;
+}
+.shopbtn *,.loginbtn *
+{
+	display: inline;
+}
+.loginbtn
+{
+	padding:0.8em 2em;
+	background: rgb(247, 147, 29);
+	color: #fff;
+	width: 90px;
+	font-size: 1.5em;
+	display: inline-block;
+}
+.shadow
+{
+	-webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.45);
+-moz-box-shadow:    4px 4px 13px 0px rgba(50, 50, 50, 0.45);
+box-shadow:         4px 4px 13px 0px rgba(50, 50, 50, 0.45);
+}
